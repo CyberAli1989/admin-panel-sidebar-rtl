@@ -1,0 +1,62 @@
+body {
+  direction: rtl;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-avatar-link {
+  border-radius: 50%;
+  position: relative;
+}
+.profile-avatar-link:focus:before {
+  content: "";
+  position: absolute;
+  border: 1px solid red;
+  top: 0;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+.profile-avatar-link .profile-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.profile-avatar-link .profile-avatar:focus {
+  border: 10px solid red;
+}
+
+.start-75 {
+  left: 50%;
+}
+
+.sidebar {
+  width: 250px;
+}
+.sidebar ul li:hover {
+  background-color: #383f45;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.bg-light-dark {
+  background-color: #333940;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    transition: 200ms;
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
